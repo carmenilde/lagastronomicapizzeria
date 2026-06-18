@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Oswald", sans-serif;
+  
+  --color-brand-red: #C41E1E;
+  --color-wood-light: #C8A96E;
+  --color-wood-medium: #B8955A;
+  --color-wood-dark: #3A2410;
+  --color-paper-cream: #F5E8C8;
+  --color-gastronomica-bg: #fff8f4;
+  --color-gastronomica-card: #D4B47A;
+}
+
+@utility bg-wood-grain {
+  background-image: repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(0,0,0,0.02) 41px, transparent 42px);
+}
+
+@utility border-double-red {
+  border-style: double;
+  border-color: #C41E1E;
+  border-width: 6px;
+}
+
+@utility shadow-hard {
+  box-shadow: 4px 4px 0px #3A2410;
+}
+
+@utility shadow-hard-red {
+  box-shadow: 4px 4px 0px #C41E1E;
+}
+
+@utility dotted-leader {
+  background-image: radial-gradient(circle, #3A2410 1px, transparent 1.5px);
+  background-position: bottom;
+  background-size: 6px 3px;
+  background-repeat: repeat-x;
+}
+
+/* Base resets or modifications */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-gastronomica-bg);
+  color: #2A1A08;
+}
+
+/* Hide scrollbar for category selector if scrollable */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

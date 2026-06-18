@@ -1,0 +1,6 @@
+{
+  "name": "La Gastronomica",
+  "description": "Sito web ufficiale della Pizzeria La Gastronomica - Pizza & Cucina dal Cuore. Menu interattivo con filtri, orari d'apertura dinamici e contatti.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
